@@ -1,52 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="estilod.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-        <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
-        <title>Bienvenido a mi Formulario</title>
+    <title>LICITAFACIL</title>
+    <link rel="stylesheet" href="css/estilod.css">
     </head>
-    
     <body>
-        <div class="container-form sign-up">
-            <div class="welcome-back">
-                <div class="message">
-                    <h2>Bienvenido a LicitaFacil</h2>
-                    <p>Si ya tienes una cuenta por favor inicia sesion aqui</p>
-                    <button class="sign-up-btn">Iniciar Sesion</button>
+        <div class="container" id="container">
+            <div class="form-container sign-up">
+                <form>
+                    <h1>Crear cuenta</h1>
+                    <span>Utiliza tu correo electronico para registrarte</span>
+                    <input type="text" placeholder="Nombre">
+                    <input type="email" placeholder="correo">
+                    <input type="password" placeholder="Contraseña">
+                    <button>Registrase</button>
+                </form>
+            </div>
+            <div class="form-container sign-in">
+                <form>
+                    <h1>Iniciar sesion</h1>
+                    <span>usa tu contraseña y correo electrónico</span>
+                    <input type="email" placeholder="correo">
+                    <input type="password" placeholder="Contraseña">
+                    <a href="#">¿Olvidaste tu contraseña?</a>
+                    <button>Iniciar sesion</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Biemvenido De Nuevo!</h1>
+                        <p>Introduzca sus datos personales para utilizar todas las funciones del sitio</p>
+                        <button class="hidden" id="login">Iniciar sesion</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Hola, Amigo!</h1>
+                        <p>Regístrese con sus datos personales para utilizar todas las funciones del sitio.</p>
+                        <button class="hidden" id="register">registrarte</button>
+                    </div>
                 </div>
             </div>
-            <form class="formulario">
-                <h2 class="create-account">Crear una cuenta</h2>
-                <p class="cuenta-gratis">Crear una cuenta gratis</p>
-                <input class="info" type="text" placeholder="Nombre">
-                <input class="info" type="email" placeholder="Email">
-                <input class="info" type="password" placeholder="Contraseña">
-                <input type="button" value="Registrarse">
-            </form>
         </div>
-        <div class="container-form sign-in">
-            <form class="formulario">
-                <h2 class="create-account">Iniciar Sesion</h2>
-                <p class="cuenta-gratis">¿Aun no tienes una cuenta?</p>
-                <input class="info" type="email" placeholder="Email">
-                <input class="info" type="password" placeholder="Contraseña">
-                <input type="button" value="Iniciar Sesion">
-            </form>
-            <div class="welcome-back">
-                <div class="message">
-                    <h2>Bienvenido de nuevo</h2>
-                    <p>Si aun no tienes una cuenta por favor registrese aqui</p>
-                    <button class="sign-in-btn">Registrarse</button>
-                </div>
-            </div>
-        </div>
-        <script src="script.js"></script>
+        <script src="js/script.js"></script>
     </body>
     
 </html>
